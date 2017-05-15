@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "O2View"
   s.version      = "0.0.1"
-  s.summary      = "A short description of O2View."
+  s.summary      = "Just test"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,10 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                   私有Pods测试
+                   私有Pods测试，踩坑啊
                    DESC
 
-  s.homepage     = "http://EXAMPLE/O2View"
+  s.homepage     = "https://github.com/ali0201"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/ali0201/O2View"}
+  #s.source       = { :git => "https://github.com/ali0201/O2View.git"}
+  s.source       = { :git => "https://github.com/ali0201/O2View.git", :tag => version }
   #s.source       = { :git => "http://EXAMPLE/O2View.git", :tag => "#{s.version}" }
 
 
@@ -136,5 +137,7 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+
+  s.module_name = 'O2View'
 
 end
